@@ -61,5 +61,9 @@ A smart and simple Python-based virtual voice assistant that can listen to your 
  4. Commit your changes (`git commit -m "Add some feature"`)
  5. Push to the branch (`git push origin feature-branch`)
  6. Open a Pull Request
+  ## Demo
+[Demo Video](demo/demo1.mp4)
+
+  
  
    
