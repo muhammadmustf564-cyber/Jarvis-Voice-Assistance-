@@ -1,5 +1,6 @@
 import pyttsx3
 import speech_recognition as sr
+import webbrowser
 import pywhatkit
 import wikipedia
 import pyjokes
@@ -27,7 +28,15 @@ def listen():
     return command.lower()
 
 def respond(command):
-    if "play" in command:
+    if "open google" in command:
+        webbrowser.open("https://google.com")
+    elif "open facebook" in command:
+        webbrowser.open("https://facebook.com")
+    elif "open youtube" in command:
+        webbrowser.open("https://youtube.com")
+    elif "open linkedin" in command:
+        webbrowser.open("https://linkedin.com")
+    elif "play" in command:
         song = command.replace("play","")
         speak(f"playing {song}")
         pywhatkit.playonyt(song)
@@ -52,4 +61,5 @@ while True:
         speak("goodbay sir")
         break
     elif command != "" :
+
         respond (command)
