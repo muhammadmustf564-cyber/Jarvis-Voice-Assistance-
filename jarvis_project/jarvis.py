@@ -27,6 +27,18 @@ def listen():
         return ""
     return command.lower()
 
+def generate_strong_password():
+    letters = string.ascii_letters + string.digits + string.punctuation
+    password = [
+        random.choice(string.ascii_uppercase),
+        random.choice(string.ascii_lowercase),
+        random.choice(string.digits),
+        random.choice(string.punctuation)
+    ]
+    password += [random.choice(letters) for _ in range(6)]
+    random.shuffle(password)
+    return "".join(password)
+
 def respond(command):
     if "open google" in command:
         webbrowser.open("https://google.com")
@@ -63,3 +75,4 @@ while True:
     elif command != "" :
 
         respond (command)
+
