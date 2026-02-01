@@ -61,7 +61,7 @@ A smart and simple Python-based virtual voice assistant that can listen to your 
  
 ## 🎥 Demo
 👉 [Click here to watch the demo](demo1.mp4)
-(demo2.mp4)
+👉 (demo2.mp4)
 
 ## 🤝 Contribute
  Contributions are welcome! If you want to contribute:
